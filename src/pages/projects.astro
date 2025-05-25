@@ -1,0 +1,67 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import ProjectCard from '../components/ProjectCard.jsx';
+layout: "../layouts/MainLayout.astro"
+
+const projects = [
+
+  {
+    title: "To-Do-Note",
+    description: "Task and note management application.",
+    image: "",
+    tags: ["Android", "Jetpack Compose", "Kotlin"],
+    link: "#"
+  },
+  {
+    title: "Portfolio Website",
+    description: "Responsive portfolio website with smooth animations.",
+    image: "",
+    tags: ["Astro", "React", "Tailwind CSS"],
+    link: "#"
+  },
+  {
+    title: "Virtual Realm Music",
+    description: "-",
+    image: "",
+    tags: ["Android", "Jetpack Compose", "Kotlin"],
+    link: "#"
+  },
+  {
+    title: "SkyDash",
+    description: "-",
+    image: "",
+    tags: ["Unity", "C#"],
+    link: "#"
+  }
+  
+  
+];
+---
+
+<MainLayout title="Projects">
+  <section class="py-16 bg-white dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+          My Projects
+        </h1>
+        <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+          Some of the best work I've done
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((project) => (
+          <ProjectCard
+            title={project.title}
+            description={project.description}
+            image={project.image}
+            tags={project.tags}
+            link={project.link}
+            client:load
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+</MainLayout>

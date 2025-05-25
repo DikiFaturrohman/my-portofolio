@@ -1,0 +1,34 @@
+---
+import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
+import ThemeToggle from '../components/ThemeToggle.jsx';
+import '../styles/global.css';
+
+const { title } = Astro.props;
+const { pathname } = Astro.url;
+---
+
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title} | Portofolio</title>
+    <!-- Hapus script inline yang akses localStorage di sini -->
+  </head>
+  <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <!-- <Header client:load /> -->
+    <Header pathname={pathname} />
+    <ThemeToggle client:load />
+    <main class="min-h-screen">
+      
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
