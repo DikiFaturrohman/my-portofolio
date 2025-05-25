@@ -12,7 +12,7 @@ This is my **personal portfolio website** built with 💚 [Astro](https://astro.
 Designed to be fast, responsive, and totally ✨ aesthetic ✨.
 
 🎯 Purpose:  
-To showcase my skills, highlight awesome projects, and give people a glimpse of the magic I create as a **developer and illustrator**.
+To showcase my skills, highlight awesome projects, and give people a glimpse of the magic I create as a **developer and designer**.
 
 ---
 
