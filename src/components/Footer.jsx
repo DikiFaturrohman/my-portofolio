@@ -23,7 +23,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/DikiFTRHM?t=yWkHauQO_PNIiG1llxNjog&s=09"
               className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"
             >
               <span className="sr-only">Twitter</span>
@@ -32,7 +32,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/diki-faturrohman-ba7002262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"
             >
               <span className="sr-only">LinkedIn</span>
