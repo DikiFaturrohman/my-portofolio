@@ -23,7 +23,7 @@ const { pathname } = Astro.url;
   </head>
   <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
     <!-- <Header client:load /> -->
-    <Header pathname={pathname} />
+    <Header client:load pathname={Astro.url.pathname} /> 
     <ThemeToggle client:load />
     <main class="min-h-screen">
       
